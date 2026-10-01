@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Miniplayer 3-Section",
+    "description": "Turns Spotify's PiP mini player into three horizontal sections — cover art | title & artist | time & progress — with frosted glass cards and album-art-driven colors.",
+    "preview": "preview.png",
+    "main": "dist/pip-3-sections.js",
+    "readme": "README.md",
+    "authors": [
+      {
+        "name": "Patrickkkkks",
+        "url": "https://github.com/Patrickkkkks"
+      }
+    ],
+    "tags": ["miniplayer", "layout", "glass", "ui"]
+  }
+]
