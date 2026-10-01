@@ -1,6 +1,6 @@
 # Miniplayer 3-Section
 
-> Turns Spotify's **PiP mini player** into three horizontal sections:
+> A Spicetify extension that turns Spotify's **PiP mini player** into three horizontal sections:
 > **cover art ｜ title & artist ｜ time & progress bar** — frosted glass cards,
 > album-art-driven colors, one consistent corner radius.
 
