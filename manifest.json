@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Miniplayer 3-Section",
+    "description": "A Spicetify extension that turns Spotify's mini player into three horizontal glass cards — cover art | track info | progress. 把 Spotify 迷你播放器改成横向三段式：封面｜歌曲信息｜进度条，毛玻璃卡片，配色跟随专辑封面。",
+    "preview": "preview.png",
+    "main": "dist/pip-3-sections.js",
+    "readme": "README.md",
+    "authors": [
+      {
+        "name": "Patrickkkkks",
+        "url": "https://github.com/Patrickkkkks"
+      }
+    ],
+    "tags": ["miniplayer", "layout", "glass", "ui"]
+  }
+]
