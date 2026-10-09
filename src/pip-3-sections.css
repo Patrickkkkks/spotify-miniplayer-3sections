@@ -12,7 +12,7 @@
    ========================================================================== */
 
 /* ------------------------------ 可调参数 ------------------------------ */
-.aQ4uP_1NPPeRKSbeVBBu {
+.VWWotUdoNiTas1k0QTVQ {
   --pip-radius: 8px;               /* 三块卡片的圆角，与 Windows 11 窗口圆角一致 */
   --pip-gap: 8px;                  /* 三块之间的间距 & 窗口内边距，保持一致 */
   --pip-blur: 22px;                /* 卡片毛玻璃强度 */
@@ -24,7 +24,7 @@
 }
 
 /* ------------------ 窗口背景：专辑封面模糊铺满 ------------------ */
-.aQ4uP_1NPPeRKSbeVBBu {
+.VWWotUdoNiTas1k0QTVQ {
   background-color: var(--pip-page-bg) !important;
 }
 
@@ -32,31 +32,31 @@
    Spotify 原本会在鼠标静止时把封面 / 中间容器往左推 22px、把整个内容
    往上推 26px，导致专辑被左侧栏遮住一角、模块间距忽大忽小。
    这里把这两个偏移量归零，悬浮与静止两种状态的位置和间距保持一致。 */
-.aQ4uP_1NPPeRKSbeVBBu {
+.VWWotUdoNiTas1k0QTVQ {
   --cinema-mode-horizontal-offset: 0px !important;
 }
 
-.aQ4uP_1NPPeRKSbeVBBu .pPyLGFZpuAJ7C178Gtse {
+.VWWotUdoNiTas1k0QTVQ .EuRSJUVqFKtHRL1BtS_K {
   --cinema-mode-top-offset: 0px !important;
 }
 
-.aQ4uP_1NPPeRKSbeVBBu [data-testid="pip-hover-element"].R7JV_J4OQxqpQEjSYqkj,
-.aQ4uP_1NPPeRKSbeVBBu .pPyLGFZpuAJ7C178Gtse.hebKXzs_EVUbT9_8O7FG .rTqZFuD2OEqRybgLkrvH {
+.VWWotUdoNiTas1k0QTVQ [data-testid="pip-hover-element"].egbwfNJJNbvGrznAmL8a,
+.VWWotUdoNiTas1k0QTVQ .EuRSJUVqFKtHRL1BtS_K.QSxzQWj__RB8rE46sYeT .A5oUCXEG2f6Dv9Ti9FgL {
   transform: none !important;
 }
 
-.aQ4uP_1NPPeRKSbeVBBu .pPyLGFZpuAJ7C178Gtse.hebKXzs_EVUbT9_8O7FG,
-.aQ4uP_1NPPeRKSbeVBBu .pPyLGFZpuAJ7C178Gtse.hebKXzs_EVUbT9_8O7FG .kXThsFTTGdsB7PQj4INA {
+.VWWotUdoNiTas1k0QTVQ .EuRSJUVqFKtHRL1BtS_K.QSxzQWj__RB8rE46sYeT,
+.VWWotUdoNiTas1k0QTVQ .EuRSJUVqFKtHRL1BtS_K.QSxzQWj__RB8rE46sYeT .MHBplpFpwOYwGSWP8lzj {
   margin-top: 0 !important;
 }
 
-.aQ4uP_1NPPeRKSbeVBBu .pPyLGFZpuAJ7C178Gtse {
+.VWWotUdoNiTas1k0QTVQ .EuRSJUVqFKtHRL1BtS_K {
   background-color: var(--pip-page-bg) !important;
   background-image: none !important;
   overflow: hidden;
 }
 
-.aQ4uP_1NPPeRKSbeVBBu .pPyLGFZpuAJ7C178Gtse::before {
+.VWWotUdoNiTas1k0QTVQ .EuRSJUVqFKtHRL1BtS_K::before {
   content: "";
   position: absolute;
   inset: -28px;
@@ -69,7 +69,7 @@
 
 /* ====================== 横向三段式（任意尺寸生效） ====================== */
 /* 一行三列：封面 | 歌手+歌名 | 时间+进度条 */
-.aQ4uP_1NPPeRKSbeVBBu .pPyLGFZpuAJ7C178Gtse {
+.VWWotUdoNiTas1k0QTVQ .EuRSJUVqFKtHRL1BtS_K {
   grid-template-areas: "media contextinfo playercontrols" !important;
   grid-template-columns: auto minmax(0, 1.15fr) minmax(0, 1fr) !important;
   grid-template-rows: minmax(0, 1fr) !important;
@@ -80,7 +80,7 @@
 }
 
 /* ---------- ① 专辑封面：填满第一块，方形，高度与另两块一致 ---------- */
-.aQ4uP_1NPPeRKSbeVBBu [data-testid="pip-hover-element"] {
+.VWWotUdoNiTas1k0QTVQ [data-testid="pip-hover-element"] {
   grid-area: media !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -91,12 +91,9 @@
   min-height: 0;
 }
 
-.aQ4uP_1NPPeRKSbeVBBu .kXThsFTTGdsB7PQj4INA,
-.aQ4uP_1NPPeRKSbeVBBu .HPhPTT1IYO3yivZ4W8Hz,
-.aQ4uP_1NPPeRKSbeVBBu .kYYayGQ5vSxtWVHRmPa7,
-.aQ4uP_1NPPeRKSbeVBBu [data-testid="document-pip-cover-art-animation-container"],
-.aQ4uP_1NPPeRKSbeVBBu .mHB_oaSqCls_wKFtcUhU,
-.aQ4uP_1NPPeRKSbeVBBu .cd9YRmTEoxrpoJX6uhoN {
+.VWWotUdoNiTas1k0QTVQ [data-testid="pip-hover-element"] div,
+.VWWotUdoNiTas1k0QTVQ [data-testid="pip-hover-element"] a,
+.VWWotUdoNiTas1k0QTVQ [data-testid="document-pip-cover-art-animation-container"] {
   width: 100% !important;
   height: 100% !important;
   max-width: none !important;
@@ -105,8 +102,8 @@
   padding: 0 !important;
 }
 
-.aQ4uP_1NPPeRKSbeVBBu [data-testid="document-pip-cover-art"],
-.aQ4uP_1NPPeRKSbeVBBu .KLcdDGwoVVklL89p5slH {
+.VWWotUdoNiTas1k0QTVQ [data-testid="pip-hover-element"] img,
+.VWWotUdoNiTas1k0QTVQ [data-testid="document-pip-cover-art"] {
   width: 100% !important;
   height: 100% !important;
   max-width: none !important;
@@ -117,17 +114,17 @@
 }
 
 /* 拆开悬停浮层与紧凑模式下的嵌套网格，让三块能并排 */
-.aQ4uP_1NPPeRKSbeVBBu [data-testid="document-pip-hover-element"] {
+.VWWotUdoNiTas1k0QTVQ [data-testid="document-pip-hover-element"] {
   display: contents !important;
   opacity: 1 !important;
   background: none !important;
 }
 
-.aQ4uP_1NPPeRKSbeVBBu .Es509NP5lREqfwDI5ntX {
+.VWWotUdoNiTas1k0QTVQ .aUHXlbbbnTWVh61EjKSL {
   display: contents !important;
 }
 
-.aQ4uP_1NPPeRKSbeVBBu .rTqZFuD2OEqRybgLkrvH {
+.VWWotUdoNiTas1k0QTVQ .A5oUCXEG2f6Dv9Ti9FgL {
   grid-area: contextinfo !important;
   display: flex !important;
   align-items: stretch !important;
@@ -136,17 +133,17 @@
   min-height: 0;
 }
 
-.aQ4uP_1NPPeRKSbeVBBu .EL0EYX8dLXCVkNZhgtMK {
+.VWWotUdoNiTas1k0QTVQ .jEsb7aUF74zoifIfm47E {
   display: none !important;
 }
 
 /* 紧凑模式自带的底部细进度条隐藏（我们用第三块里的进度条） */
-.aQ4uP_1NPPeRKSbeVBBu [data-testid="miniplayer-edge-progress"] {
+.VWWotUdoNiTas1k0QTVQ [data-testid="miniplayer-edge-progress"] {
   display: none !important;
 }
 
 /* ------------------------ ② 歌手 + 歌名 ------------------------ */
-.aQ4uP_1NPPeRKSbeVBBu .YJH3d2TpyIFilUHUAgmA {
+.VWWotUdoNiTas1k0QTVQ .r9yYayeBusy5NSl__YO3 {
   grid-area: contextinfo !important;
   margin: 0 !important;
   padding: 0 16px !important;
@@ -168,38 +165,38 @@
   overflow: hidden;
 }
 
-.aQ4uP_1NPPeRKSbeVBBu .YJH3d2TpyIFilUHUAgmA > * {
+.VWWotUdoNiTas1k0QTVQ .r9yYayeBusy5NSl__YO3 > * {
   min-width: 0;
 }
 
-.aQ4uP_1NPPeRKSbeVBBu .YJH3d2TpyIFilUHUAgmA [data-testid="context-item-info-title"] {
+.VWWotUdoNiTas1k0QTVQ .r9yYayeBusy5NSl__YO3 [data-testid="context-item-info-title"] {
   color: var(--pip-text) !important;
   font-weight: 700 !important;
 }
 
-.aQ4uP_1NPPeRKSbeVBBu .YJH3d2TpyIFilUHUAgmA [data-testid="context-item-info-subtitles"] {
+.VWWotUdoNiTas1k0QTVQ .r9yYayeBusy5NSl__YO3 [data-testid="context-item-info-subtitles"] {
   color: var(--pip-text-sub) !important;
 }
 
-.aQ4uP_1NPPeRKSbeVBBu .YJH3d2TpyIFilUHUAgmA [data-testid="context-item-info-title"],
-.aQ4uP_1NPPeRKSbeVBBu .YJH3d2TpyIFilUHUAgmA [data-testid="context-item-info-subtitles"] {
+.VWWotUdoNiTas1k0QTVQ .r9yYayeBusy5NSl__YO3 [data-testid="context-item-info-title"],
+.VWWotUdoNiTas1k0QTVQ .r9yYayeBusy5NSl__YO3 [data-testid="context-item-info-subtitles"] {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.aQ4uP_1NPPeRKSbeVBBu .YJH3d2TpyIFilUHUAgmA a,
-.aQ4uP_1NPPeRKSbeVBBu .YJH3d2TpyIFilUHUAgmA a:hover {
+.VWWotUdoNiTas1k0QTVQ .r9yYayeBusy5NSl__YO3 a,
+.VWWotUdoNiTas1k0QTVQ .r9yYayeBusy5NSl__YO3 a:hover {
   color: inherit !important;
 }
 
 /* 去掉"加号"按钮（保留右侧的红心/更多按钮） */
-.aQ4uP_1NPPeRKSbeVBBu .Ow18ciYFcfpxNJjrnu3g {
+.VWWotUdoNiTas1k0QTVQ .Ew7hFJVbPMyRmTf5_I9v {
   display: none !important;
 }
 
 /* --------------------- ③ 播放时间（上）+ 进度条（下） --------------------- */
-.aQ4uP_1NPPeRKSbeVBBu .iCA7OkVqEM9bpDTLjuxB {
+.VWWotUdoNiTas1k0QTVQ .EsTKFRse6yhUJ7Tg_BB5 {
   grid-area: playercontrols !important;
   display: flex !important;
   flex-direction: column !important;
@@ -219,7 +216,7 @@
   --text-base: var(--pip-text);
 }
 
-.aQ4uP_1NPPeRKSbeVBBu .iCA7OkVqEM9bpDTLjuxB [data-testid="progress-bar"] {
+.VWWotUdoNiTas1k0QTVQ .EsTKFRse6yhUJ7Tg_BB5 [data-testid="progress-bar"] {
   --bg-color: rgba(255, 255, 255, .20) !important;
   --bg-color: color-mix(in srgb, var(--pip-text) 20%, transparent) !important;
   --mg-color: var(--pip-text-sub) !important;
@@ -229,7 +226,7 @@
 }
 
 /* 播放按钮：默认隐藏，鼠标移到封面上时淡入 */
-.aQ4uP_1NPPeRKSbeVBBu .FA8mIAUacb7dqSJh5EOB {
+.VWWotUdoNiTas1k0QTVQ .CIXoI6TdganTKC7tFJGG {
   grid-area: media !important;
   z-index: 4 !important;
   align-self: stretch !important;
@@ -247,21 +244,21 @@
   transition: opacity .18s ease;
 }
 
-.aQ4uP_1NPPeRKSbeVBBu .pPyLGFZpuAJ7C178Gtse:has([data-testid="pip-hover-element"]:hover) .FA8mIAUacb7dqSJh5EOB,
-.aQ4uP_1NPPeRKSbeVBBu .FA8mIAUacb7dqSJh5EOB:focus-within {
+.VWWotUdoNiTas1k0QTVQ .EuRSJUVqFKtHRL1BtS_K:has([data-testid="pip-hover-element"]:hover) .CIXoI6TdganTKC7tFJGG,
+.VWWotUdoNiTas1k0QTVQ .CIXoI6TdganTKC7tFJGG:focus-within {
   opacity: 1;
   pointer-events: auto;
 }
 
 /* ---------- 打开队列时（窗口很高）：在横条下面再加一行 ---------- */
 @media (height >= 499px) {
-  .aQ4uP_1NPPeRKSbeVBBu .pPyLGFZpuAJ7C178Gtse:has(.xgjAzJe0FSXikypjHksZ) {
+  .VWWotUdoNiTas1k0QTVQ .EuRSJUVqFKtHRL1BtS_K:has(.eSQ9yCHqAdCqJnYuv9bt) {
     grid-template-areas: "media contextinfo playercontrols" "extra extra extra" !important;
     grid-template-columns: auto minmax(0, 1.15fr) minmax(0, 1fr) !important;
     grid-template-rows: minmax(0, 1fr) minmax(0, 1fr) !important;
   }
 
-  .aQ4uP_1NPPeRKSbeVBBu .xgjAzJe0FSXikypjHksZ {
+  .VWWotUdoNiTas1k0QTVQ .eSQ9yCHqAdCqJnYuv9bt {
     height: auto !important;
     min-height: 0;
   }

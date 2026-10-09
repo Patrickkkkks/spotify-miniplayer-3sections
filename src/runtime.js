@@ -5,10 +5,10 @@
  * three horizontal sections: cover art | title & artist | time & progress.
  * 把 Spotify 迷你播放器改成横向三段式：封面 ｜ 歌手+歌名 ｜ 时间+进度条。
  *
- * @version 1.0.0
+ * @version 1.0.1
  * @license MIT
  * @repository https://github.com/Patrickkkkks/spotify-miniplayer-3sections
- * @tested-with Spotify 1.3.3.264 / Spicetify 2.45.1 / Windows 11
+ * @tested-with Spotify 1.3.4.258 / Spicetify 2.45.1 / Windows 11
  */
 
 (function () {
