@@ -201,6 +201,18 @@
   display: none !important;
 }
 
+/* 播放推荐曲目时，操作区里的红心会被替换成"移除推荐（✕）+ 添加推荐（＋）"，
+   这里把这两个按钮连同整个操作区一起隐藏（普通曲目仍保留红心） */
+.bEhb_FeKn_j0Not8O0Ua .KxxuuV2YdX_0Hoc3Tpw6,
+.bEhb_FeKn_j0Not8O0Ua .cJQ1LjUkPXLemCedNguL {
+  display: none !important;
+}
+
+.bEhb_FeKn_j0Not8O0Ua .yLfxkhR9AuglM7q6O3Fk:has(.KxxuuV2YdX_0Hoc3Tpw6),
+.bEhb_FeKn_j0Not8O0Ua .yLfxkhR9AuglM7q6O3Fk:has(.cJQ1LjUkPXLemCedNguL) {
+  display: none !important;
+}
+
 /* --------------------- ③ 播放时间（上）+ 进度条（下） --------------------- */
 .bEhb_FeKn_j0Not8O0Ua .glTivoRqAfFVHgs50m8g {
   grid-area: playercontrols !important;
