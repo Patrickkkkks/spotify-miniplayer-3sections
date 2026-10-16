@@ -5,7 +5,7 @@
  * three horizontal sections: cover art | title & artist | time & progress.
  * 把 Spotify 迷你播放器改成横向三段式：封面 ｜ 歌手+歌名 ｜ 时间+进度条。
  *
- * @version 1.0.2
+ * @version 1.0.3
  * @license MIT
  * @repository https://github.com/Patrickkkkks/spotify-miniplayer-3sections
  * @tested-with Spotify 1.3.5.3058 / Spicetify 2.45.1 / Windows 11
@@ -217,6 +217,12 @@
 
 /* 去掉"加号"按钮（保留右侧的红心/更多按钮） */
 .bEhb_FeKn_j0Not8O0Ua .bVNUf8KfIKl6mb9DrWI1 {
+  display: none !important;
+}
+
+/* 去掉"不再推荐"（✕）按钮：播放推荐曲目时它会出现在信息卡操作区，
+   默认透明、悬停时浮现，横条比例下不需要它 */
+.bEhb_FeKn_j0Not8O0Ua [data-feedback-curated] {
   display: none !important;
 }
 

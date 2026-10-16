@@ -195,6 +195,12 @@
   display: none !important;
 }
 
+/* 去掉"不再推荐"（✕）按钮：播放推荐曲目时它会出现在信息卡操作区，
+   默认透明、悬停时浮现，横条比例下不需要它 */
+.bEhb_FeKn_j0Not8O0Ua [data-feedback-curated] {
+  display: none !important;
+}
+
 /* --------------------- ③ 播放时间（上）+ 进度条（下） --------------------- */
 .bEhb_FeKn_j0Not8O0Ua .glTivoRqAfFVHgs50m8g {
   grid-area: playercontrols !important;
