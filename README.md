@@ -22,7 +22,7 @@
 ## Requirements
 
 - Spicetify 2.45+ (extension support)
-- Spotify desktop **1.3.4.258** (tested on Windows 11, if miniplayer is not available on old platforms some changes may be added) — see *Compatibility* below
+- Spotify desktop **1.3.5.3058** (tested on Windows 11, if miniplayer is not available on old platforms some changes may be added) — see *Compatibility* below
 - The mini player must be the Document Picture-in-Picture window (default in current desktop builds)
 
 ## Install
@@ -52,7 +52,7 @@ Then restart Spotify and open the mini player.
 ## Compatibility
 
 Spotify's client UI is minified and its class names are hashed, and they change
-between releases. This extension targets Spotify **1.3.4.258** (v1.0.0 targeted 1.3.3.264). Most selectors use
+between releases. This extension targets Spotify **1.3.5.3058** (v1.0.1 targeted 1.3.4.258). Most selectors use
 stable `data-testid` attributes (`pip-hover-element`, `document-pip-hover-element`,
 `progress-bar`, `playback-duration`, …); the layout ones use the current hashed
 class names, so a Spotify update may require updating them in

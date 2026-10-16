@@ -5,10 +5,10 @@
  * three horizontal sections: cover art | title & artist | time & progress.
  * 把 Spotify 迷你播放器改成横向三段式：封面 ｜ 歌手+歌名 ｜ 时间+进度条。
  *
- * @version 1.0.1
+ * @version 1.0.2
  * @license MIT
  * @repository https://github.com/Patrickkkkks/spotify-miniplayer-3sections
- * @tested-with Spotify 1.3.4.258 / Spicetify 2.45.1 / Windows 11
+ * @tested-with Spotify 1.3.5.3058 / Spicetify 2.45.1 / Windows 11
  */
 
 (function () {
@@ -37,7 +37,7 @@
    ========================================================================== */
 
 /* ------------------------------ 可调参数 ------------------------------ */
-.VWWotUdoNiTas1k0QTVQ {
+.bEhb_FeKn_j0Not8O0Ua {
   --pip-radius: 8px;               /* 三块卡片的圆角，与 Windows 11 窗口圆角一致 */
   --pip-gap: 8px;                  /* 三块之间的间距 & 窗口内边距，保持一致 */
   --pip-blur: 22px;                /* 卡片毛玻璃强度 */
@@ -49,7 +49,7 @@
 }
 
 /* ------------------ 窗口背景：专辑封面模糊铺满 ------------------ */
-.VWWotUdoNiTas1k0QTVQ {
+.bEhb_FeKn_j0Not8O0Ua {
   background-color: var(--pip-page-bg) !important;
 }
 
@@ -57,31 +57,31 @@
    Spotify 原本会在鼠标静止时把封面 / 中间容器往左推 22px、把整个内容
    往上推 26px，导致专辑被左侧栏遮住一角、模块间距忽大忽小。
    这里把这两个偏移量归零，悬浮与静止两种状态的位置和间距保持一致。 */
-.VWWotUdoNiTas1k0QTVQ {
+.bEhb_FeKn_j0Not8O0Ua {
   --cinema-mode-horizontal-offset: 0px !important;
 }
 
-.VWWotUdoNiTas1k0QTVQ .EuRSJUVqFKtHRL1BtS_K {
+.bEhb_FeKn_j0Not8O0Ua .URcit8iHn3qCCV6zMxMj {
   --cinema-mode-top-offset: 0px !important;
 }
 
-.VWWotUdoNiTas1k0QTVQ [data-testid="pip-hover-element"].egbwfNJJNbvGrznAmL8a,
-.VWWotUdoNiTas1k0QTVQ .EuRSJUVqFKtHRL1BtS_K.QSxzQWj__RB8rE46sYeT .A5oUCXEG2f6Dv9Ti9FgL {
+.bEhb_FeKn_j0Not8O0Ua [data-testid="pip-hover-element"].V5nMLNGirl8Qq3LKiFlJ,
+.bEhb_FeKn_j0Not8O0Ua .URcit8iHn3qCCV6zMxMj.gPiaPK2nA9gwm2Yqu6jq .AWZB_jUImxPQPayEBTk4 {
   transform: none !important;
 }
 
-.VWWotUdoNiTas1k0QTVQ .EuRSJUVqFKtHRL1BtS_K.QSxzQWj__RB8rE46sYeT,
-.VWWotUdoNiTas1k0QTVQ .EuRSJUVqFKtHRL1BtS_K.QSxzQWj__RB8rE46sYeT .MHBplpFpwOYwGSWP8lzj {
+.bEhb_FeKn_j0Not8O0Ua .URcit8iHn3qCCV6zMxMj.gPiaPK2nA9gwm2Yqu6jq,
+.bEhb_FeKn_j0Not8O0Ua .URcit8iHn3qCCV6zMxMj.gPiaPK2nA9gwm2Yqu6jq .pxfUJGGY2pRXA3TnweGS {
   margin-top: 0 !important;
 }
 
-.VWWotUdoNiTas1k0QTVQ .EuRSJUVqFKtHRL1BtS_K {
+.bEhb_FeKn_j0Not8O0Ua .URcit8iHn3qCCV6zMxMj {
   background-color: var(--pip-page-bg) !important;
   background-image: none !important;
   overflow: hidden;
 }
 
-.VWWotUdoNiTas1k0QTVQ .EuRSJUVqFKtHRL1BtS_K::before {
+.bEhb_FeKn_j0Not8O0Ua .URcit8iHn3qCCV6zMxMj::before {
   content: "";
   position: absolute;
   inset: -28px;
@@ -94,7 +94,7 @@
 
 /* ====================== 横向三段式（任意尺寸生效） ====================== */
 /* 一行三列：封面 | 歌手+歌名 | 时间+进度条 */
-.VWWotUdoNiTas1k0QTVQ .EuRSJUVqFKtHRL1BtS_K {
+.bEhb_FeKn_j0Not8O0Ua .URcit8iHn3qCCV6zMxMj {
   grid-template-areas: "media contextinfo playercontrols" !important;
   grid-template-columns: auto minmax(0, 1.15fr) minmax(0, 1fr) !important;
   grid-template-rows: minmax(0, 1fr) !important;
@@ -105,7 +105,7 @@
 }
 
 /* ---------- ① 专辑封面：填满第一块，方形，高度与另两块一致 ---------- */
-.VWWotUdoNiTas1k0QTVQ [data-testid="pip-hover-element"] {
+.bEhb_FeKn_j0Not8O0Ua [data-testid="pip-hover-element"] {
   grid-area: media !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -116,9 +116,9 @@
   min-height: 0;
 }
 
-.VWWotUdoNiTas1k0QTVQ [data-testid="pip-hover-element"] div,
-.VWWotUdoNiTas1k0QTVQ [data-testid="pip-hover-element"] a,
-.VWWotUdoNiTas1k0QTVQ [data-testid="document-pip-cover-art-animation-container"] {
+.bEhb_FeKn_j0Not8O0Ua [data-testid="pip-hover-element"] div,
+.bEhb_FeKn_j0Not8O0Ua [data-testid="pip-hover-element"] a,
+.bEhb_FeKn_j0Not8O0Ua [data-testid="document-pip-cover-art-animation-container"] {
   width: 100% !important;
   height: 100% !important;
   max-width: none !important;
@@ -127,8 +127,8 @@
   padding: 0 !important;
 }
 
-.VWWotUdoNiTas1k0QTVQ [data-testid="pip-hover-element"] img,
-.VWWotUdoNiTas1k0QTVQ [data-testid="document-pip-cover-art"] {
+.bEhb_FeKn_j0Not8O0Ua [data-testid="pip-hover-element"] img,
+.bEhb_FeKn_j0Not8O0Ua [data-testid="document-pip-cover-art"] {
   width: 100% !important;
   height: 100% !important;
   max-width: none !important;
@@ -139,17 +139,17 @@
 }
 
 /* 拆开悬停浮层与紧凑模式下的嵌套网格，让三块能并排 */
-.VWWotUdoNiTas1k0QTVQ [data-testid="document-pip-hover-element"] {
+.bEhb_FeKn_j0Not8O0Ua [data-testid="document-pip-hover-element"] {
   display: contents !important;
   opacity: 1 !important;
   background: none !important;
 }
 
-.VWWotUdoNiTas1k0QTVQ .aUHXlbbbnTWVh61EjKSL {
+.bEhb_FeKn_j0Not8O0Ua .JO8CP2asWaZqQiGeyD8H {
   display: contents !important;
 }
 
-.VWWotUdoNiTas1k0QTVQ .A5oUCXEG2f6Dv9Ti9FgL {
+.bEhb_FeKn_j0Not8O0Ua .AWZB_jUImxPQPayEBTk4 {
   grid-area: contextinfo !important;
   display: flex !important;
   align-items: stretch !important;
@@ -158,17 +158,17 @@
   min-height: 0;
 }
 
-.VWWotUdoNiTas1k0QTVQ .jEsb7aUF74zoifIfm47E {
+.bEhb_FeKn_j0Not8O0Ua .DHrF_9CgAwmk6pMviMCw {
   display: none !important;
 }
 
 /* 紧凑模式自带的底部细进度条隐藏（我们用第三块里的进度条） */
-.VWWotUdoNiTas1k0QTVQ [data-testid="miniplayer-edge-progress"] {
+.bEhb_FeKn_j0Not8O0Ua [data-testid="miniplayer-edge-progress"] {
   display: none !important;
 }
 
 /* ------------------------ ② 歌手 + 歌名 ------------------------ */
-.VWWotUdoNiTas1k0QTVQ .r9yYayeBusy5NSl__YO3 {
+.bEhb_FeKn_j0Not8O0Ua .wqWx0tCZPmntPpBGC2nv {
   grid-area: contextinfo !important;
   margin: 0 !important;
   padding: 0 16px !important;
@@ -190,38 +190,38 @@
   overflow: hidden;
 }
 
-.VWWotUdoNiTas1k0QTVQ .r9yYayeBusy5NSl__YO3 > * {
+.bEhb_FeKn_j0Not8O0Ua .wqWx0tCZPmntPpBGC2nv > * {
   min-width: 0;
 }
 
-.VWWotUdoNiTas1k0QTVQ .r9yYayeBusy5NSl__YO3 [data-testid="context-item-info-title"] {
+.bEhb_FeKn_j0Not8O0Ua .wqWx0tCZPmntPpBGC2nv [data-testid="context-item-info-title"] {
   color: var(--pip-text) !important;
   font-weight: 700 !important;
 }
 
-.VWWotUdoNiTas1k0QTVQ .r9yYayeBusy5NSl__YO3 [data-testid="context-item-info-subtitles"] {
+.bEhb_FeKn_j0Not8O0Ua .wqWx0tCZPmntPpBGC2nv [data-testid="context-item-info-subtitles"] {
   color: var(--pip-text-sub) !important;
 }
 
-.VWWotUdoNiTas1k0QTVQ .r9yYayeBusy5NSl__YO3 [data-testid="context-item-info-title"],
-.VWWotUdoNiTas1k0QTVQ .r9yYayeBusy5NSl__YO3 [data-testid="context-item-info-subtitles"] {
+.bEhb_FeKn_j0Not8O0Ua .wqWx0tCZPmntPpBGC2nv [data-testid="context-item-info-title"],
+.bEhb_FeKn_j0Not8O0Ua .wqWx0tCZPmntPpBGC2nv [data-testid="context-item-info-subtitles"] {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.VWWotUdoNiTas1k0QTVQ .r9yYayeBusy5NSl__YO3 a,
-.VWWotUdoNiTas1k0QTVQ .r9yYayeBusy5NSl__YO3 a:hover {
+.bEhb_FeKn_j0Not8O0Ua .wqWx0tCZPmntPpBGC2nv a,
+.bEhb_FeKn_j0Not8O0Ua .wqWx0tCZPmntPpBGC2nv a:hover {
   color: inherit !important;
 }
 
 /* 去掉"加号"按钮（保留右侧的红心/更多按钮） */
-.VWWotUdoNiTas1k0QTVQ .Ew7hFJVbPMyRmTf5_I9v {
+.bEhb_FeKn_j0Not8O0Ua .bVNUf8KfIKl6mb9DrWI1 {
   display: none !important;
 }
 
 /* --------------------- ③ 播放时间（上）+ 进度条（下） --------------------- */
-.VWWotUdoNiTas1k0QTVQ .EsTKFRse6yhUJ7Tg_BB5 {
+.bEhb_FeKn_j0Not8O0Ua .glTivoRqAfFVHgs50m8g {
   grid-area: playercontrols !important;
   display: flex !important;
   flex-direction: column !important;
@@ -241,7 +241,7 @@
   --text-base: var(--pip-text);
 }
 
-.VWWotUdoNiTas1k0QTVQ .EsTKFRse6yhUJ7Tg_BB5 [data-testid="progress-bar"] {
+.bEhb_FeKn_j0Not8O0Ua .glTivoRqAfFVHgs50m8g [data-testid="progress-bar"] {
   --bg-color: rgba(255, 255, 255, .20) !important;
   --bg-color: color-mix(in srgb, var(--pip-text) 20%, transparent) !important;
   --mg-color: var(--pip-text-sub) !important;
@@ -251,7 +251,7 @@
 }
 
 /* 播放按钮：默认隐藏，鼠标移到封面上时淡入 */
-.VWWotUdoNiTas1k0QTVQ .CIXoI6TdganTKC7tFJGG {
+.bEhb_FeKn_j0Not8O0Ua .[data-testid="document-pip-player-controls"] {
   grid-area: media !important;
   z-index: 4 !important;
   align-self: stretch !important;
@@ -269,21 +269,21 @@
   transition: opacity .18s ease;
 }
 
-.VWWotUdoNiTas1k0QTVQ .EuRSJUVqFKtHRL1BtS_K:has([data-testid="pip-hover-element"]:hover) .CIXoI6TdganTKC7tFJGG,
-.VWWotUdoNiTas1k0QTVQ .CIXoI6TdganTKC7tFJGG:focus-within {
+.bEhb_FeKn_j0Not8O0Ua .URcit8iHn3qCCV6zMxMj:has([data-testid="pip-hover-element"]:hover) .[data-testid="document-pip-player-controls"],
+.bEhb_FeKn_j0Not8O0Ua .[data-testid="document-pip-player-controls"]:focus-within {
   opacity: 1;
   pointer-events: auto;
 }
 
 /* ---------- 打开队列时（窗口很高）：在横条下面再加一行 ---------- */
 @media (height >= 499px) {
-  .VWWotUdoNiTas1k0QTVQ .EuRSJUVqFKtHRL1BtS_K:has(.eSQ9yCHqAdCqJnYuv9bt) {
+  .bEhb_FeKn_j0Not8O0Ua .URcit8iHn3qCCV6zMxMj:has(.ovPl_lvjFOJ_Mz9Y6grv) {
     grid-template-areas: "media contextinfo playercontrols" "extra extra extra" !important;
     grid-template-columns: auto minmax(0, 1.15fr) minmax(0, 1fr) !important;
     grid-template-rows: minmax(0, 1fr) minmax(0, 1fr) !important;
   }
 
-  .VWWotUdoNiTas1k0QTVQ .eSQ9yCHqAdCqJnYuv9bt {
+  .bEhb_FeKn_j0Not8O0Ua .ovPl_lvjFOJ_Mz9Y6grv {
     height: auto !important;
     min-height: 0;
   }
